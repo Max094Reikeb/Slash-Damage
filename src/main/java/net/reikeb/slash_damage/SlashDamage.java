@@ -1,4 +1,4 @@
-package net.reikeb.biome_tools;
+package net.reikeb.slash_damage;
 
 import com.mojang.brigadier.CommandDispatcher;
 import net.minecraft.commands.CommandSourceStack;
@@ -6,18 +6,18 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.reikeb.biome_tools.commands.SetBiomeCommand;
+import net.reikeb.slash_damage.commands.DamageCommand;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod(BiomeTools.MODID)
-@Mod.EventBusSubscriber(modid = BiomeTools.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
-public class BiomeTools {
+@Mod(SlashDamage.MODID)
+@Mod.EventBusSubscriber(modid = SlashDamage.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
+public class SlashDamage {
 
     public static final Logger LOGGER = LogManager.getLogger();
-    public static final String MODID = "biome_tools";
+    public static final String MODID = "slash_damage";
 
-    public BiomeTools() {
+    public SlashDamage() {
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -26,6 +26,6 @@ public class BiomeTools {
     @SubscribeEvent
     public static void onRegisterCommand(RegisterCommandsEvent event) {
         CommandDispatcher<CommandSourceStack> commandDispatcher = event.getDispatcher();
-        SetBiomeCommand.register(commandDispatcher);
+        DamageCommand.register(commandDispatcher);
     }
 }

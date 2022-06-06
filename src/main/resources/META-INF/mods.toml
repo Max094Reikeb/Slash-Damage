@@ -3,23 +3,23 @@ loaderVersion = "[40,)"
 license = "GNU GPL 3.0"
 
 [[mods]]
-modId = "biome_tools"
+modId = "slash_damage"
 version = "${file.jarVersion}"
-displayName = "BiomeTools"
+displayName = "Slash Damage"
 credits="Credits are on mod's page."
 authors="Max094_Reikeb"
 description = '''
-BiomeTools is a library about biomes
+Slash Damage adds a new command to damage players
 '''
 
-[[dependencies.biome_tools]] #optional
+[[dependencies.slash_damage]] #optional
     modId = "forge"
     mandatory = true
     versionRange = "[40,)"
     ordering = "NONE"
     side = "BOTH"
 
-[[dependencies.biome_tools]]
+[[dependencies.slash_damage]]
     modId = "minecraft"
     mandatory = true
     versionRange = "[1.18.2,1.19)"

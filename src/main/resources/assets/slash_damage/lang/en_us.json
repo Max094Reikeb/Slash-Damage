@@ -1,0 +1,4 @@
+{
+  "command.slash_damage.damaged": "%s has been hurt",
+  "command.slash_damage.null_player": "Internal error with target player."
+}

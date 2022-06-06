@@ -87,12 +87,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "biometools",
-                //"Specification-Vendor": "biometools authors",
+                "Specification-Title"     : "slashdamage",
+                //"Specification-Vendor": "slashdamage authors",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
-                //"Implementation-Vendor": "biometools authors",
+                //"Implementation-Vendor": "slashdamage authors",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

@@ -1,0 +1,28 @@
+{
+  "name": [
+    "minecraft:inFire",
+    "minecraft:lightningBolt",
+    "minecraft:onFire",
+    "minecraft:lava",
+    "minecraft:hotFloor",
+    "minecraft:inWall",
+    "minecraft:cramming",
+    "minecraft:drown",
+    "minecraft:starve",
+    "minecraft:cactus",
+    "minecraft:fall",
+    "minecraft:flyIntoWall",
+    "minecraft:outOfWorld",
+    "minecraft:generic",
+    "minecraft:wither",
+    "minecraft:magic",
+    "minecraft:anvil",
+    "minecraft:fallingBlock",
+    "minecraft:dragonBreath",
+    "minecraft:dryout",
+    "minecraft:sweetBerryBush",
+    "minecraft:freeze",
+    "minecraft:fallingStalactite",
+    "minecraft:stalagmite"
+  ]
+}
