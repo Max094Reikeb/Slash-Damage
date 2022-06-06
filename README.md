@@ -4,7 +4,7 @@ Slash Damage is a mod adding a new command : `/damage`
 
 ## About
 [![](https://jitpack.io/v/Max094Reikeb/Slash-Damage.svg)](https://jitpack.io/#Max094Reikeb/Slash-Damage)
-[![curseforge](http://cf.way2muchnoise.eu/versions/624239.svg)](https://www.curseforge.com/minecraft/mc-mods/maxilib)
+[![curseforge](http://cf.way2muchnoise.eu/versions/631237.svg)](https://www.curseforge.com/minecraft/mc-mods/slash-damage)
 ![Java CI with Gradle](https://github.com/Max094Reikeb/Slash-Damage/workflows/Java%20CI%20with%20Gradle/badge.svg?branch=1.18.2-FORGE)
 
 ## Documentation
