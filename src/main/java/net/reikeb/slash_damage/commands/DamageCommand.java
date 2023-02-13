@@ -13,7 +13,7 @@ import net.minecraft.commands.SharedSuggestionProvider;
 import net.minecraft.commands.arguments.GameProfileArgument;
 import net.minecraft.commands.arguments.ResourceLocationArgument;
 import net.minecraft.commands.synchronization.SuggestionProviders;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageSource;
@@ -23,8 +23,7 @@ import java.util.Collection;
 
 public class DamageCommand {
 
-    private static final DynamicCommandExceptionType ERROR_PLAYER = new DynamicCommandExceptionType((error)
-            -> new TranslatableComponent("command.slash_damage.null_player", error));
+    private static final DynamicCommandExceptionType ERROR_PLAYER = new DynamicCommandExceptionType((error) -> Component.translatable("command.slash_damage.null_player", error));
 
     public static final SuggestionProvider<CommandSourceStack> AVAILABLE_DAMAGE_SOURCES = SuggestionProviders.register(
             new ResourceLocation("available_damage_sources"), (context, builder) ->
@@ -52,11 +51,10 @@ public class DamageCommand {
             ServerPlayer serverPlayer = source.getServer().getPlayerList().getPlayer(gameProfile.getId());
             if (serverPlayer == null) throw ERROR_PLAYER.create(gameProfile);
 
-            DamageSource newDamageSource = (bypassArmor ? new DamageSource(damageSource.getPath()).bypassArmor()
-                    : new DamageSource(damageSource.getPath()));
+            DamageSource newDamageSource = (bypassArmor ? new DamageSource(damageSource.getPath()).bypassArmor() : new DamageSource(damageSource.getPath()));
 
             serverPlayer.hurt(newDamageSource, damage);
-            source.sendSuccess(new TranslatableComponent("command.slash_damage.damaged", serverPlayer.getDisplayName().getString()), true);
+            source.sendSuccess(Component.translatable("command.slash_damage.damaged", serverPlayer.getDisplayName().getString()), true);
         }
         return source.hashCode();
     }
