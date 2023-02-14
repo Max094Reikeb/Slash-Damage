@@ -8,7 +8,7 @@ Slash Damage is a mod adding a new command : `/damage`
 ![Java CI with Gradle](https://github.com/Max094Reikeb/Slash-Damage/workflows/Java%20CI%20with%20Gradle/badge.svg?branch=1.18.2-FORGE)
 
 ## Documentation
-Slash Damage provides detailed documentation in the form of a [Wiki](https://max094reikeb.gitbook.io/slash-damage/). Slash Damage is only available for Forge 1.18.2.
+Slash Damage provides detailed documentation in the form of a [Wiki](https://max094reikeb.gitbook.io/slash-damage/). Slash Damage is only available for Forge 1.18.2 & 1.19.3.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
